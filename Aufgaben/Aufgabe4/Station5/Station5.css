@@ -44,8 +44,8 @@ body{
         position: absolute;
         float: left;
         width: 140px;
-        margin-top: 60px;
-        margin-left: 0px;
+        margin-top: 90px;
+        margin-left: -220px;
         text-align: center;
     }
     
@@ -53,8 +53,8 @@ body{
         position: absolute;
         float: left;
         width: 160px;
-        margin-top: 60px;
-        margin-left: 220px;
+        margin-top: 120px;
+        margin-left: -220px;
         text-align: center;
     }
     
