@@ -45,13 +45,13 @@ body{
     img[alt=Pinguin]{
             display: inline-block;
             position: absolute;
-            margin-left: 250px;
-            margin-top: 490px;
+            margin-left: 2700px;
+            margin-top: 500px;
     }
     
     img[alt=Muscheln]{
         display: inline-block;
         position: absolute;
         margin-left: -240px;
-        margin-top: 540px;
+        margin-top: 560px;
     }

@@ -24,7 +24,7 @@ body{
         font-size: 15px;
         font-weight: bolder;
         text-align: left;
-        margin-top: 160px;
+        margin-top: 260px;
         margin-left: 85px;
         transform: translate(-50%, -50%);
         color: white;
@@ -33,7 +33,7 @@ body{
 img[alt=Muschel1]{
     display: inline-block;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 500px;
     margin-left: -140px;
     transform: translate(-50%, -50%);
     }
@@ -41,7 +41,7 @@ img[alt=Muschel1]{
 img[alt=Muschel2]{
     display: inline-block;
     position: absolute;
-    margin-top: 270px;
+    margin-top: 470px;
     margin-left: 30px;
     transform: translate(-50%, -50%);
     }
@@ -49,7 +49,7 @@ img[alt=Muschel2]{
 img[alt=Muschel3]{
     display: inline-block;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 500px;
     margin-left: 200px;
     transform: translate(-50%, -50%);
     }  
