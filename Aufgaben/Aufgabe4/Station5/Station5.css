@@ -44,8 +44,8 @@ body{
         position: absolute;
         float: left;
         width: 140px;
-        margin-top: 140px;
-        margin-left: -220px;
+        margin-top: 60px;
+        margin-left: 220px;
         text-align: center;
     }
     
@@ -54,7 +54,7 @@ body{
         float: left;
         width: 160px;
         margin-top: 220px;
-        margin-left: -220px;
+        margin-left: 0px;
         text-align: center;
     }
     
@@ -70,8 +70,8 @@ body{
     .column-down-right{
         position: absolute;
         float: left;
-        width: 240px;
-        margin-top: 380px;
+        width: 250px;
+        margin-top: 300px;
         margin-left: 220px;
         text-align: center;
     }
