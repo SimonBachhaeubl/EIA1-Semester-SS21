@@ -28,12 +28,12 @@ body{
     }
     
     img[alt=Pinguin]{
-            display: inline-block;
+
             position: absolute; absolute; right: -10px; bottom: 0px;
             
     }
     
     img[alt=Muscheln]{
-        display: inline-block;
-        position: absolute; absolute; left: -40px; bottom: 100 px;
+        
+        position: absolute; absolute; left: -80px; bottom: -20 px;
     }
