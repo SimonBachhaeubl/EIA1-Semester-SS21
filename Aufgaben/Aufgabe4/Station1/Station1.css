@@ -29,11 +29,11 @@ body{
     
     img[alt=Pinguin]{
 
-            position: absolute; absolute; right: -10px; bottom: 0px;
+            position: absolute; absolute; right: 40px; bottom: 40px;
             
     }
     
     img[alt=Muscheln]{
-        position: absolute; left: -60px; bottom: 0px;
+        position: absolute; left: 30px; bottom: 40px;
     }
     
