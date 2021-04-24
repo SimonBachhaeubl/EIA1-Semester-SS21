@@ -7,7 +7,7 @@ body{
     .container{
         
         position: absolute; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-        font-size: 30pt;
+        
         
         color: whitesmoke;
     }
@@ -15,6 +15,7 @@ body{
     .headline{
         
         position: absolute; left: 90px; top: 40px;
+        font-size: 30pt;
         
         color: whitesmoke;
     }
