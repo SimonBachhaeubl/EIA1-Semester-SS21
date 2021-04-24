@@ -12,13 +12,9 @@ body{
     
     #headline{
         display: inline-block;
-        position: absolute;
+        position: absolute; left: 80px; top: 30px;
         font-size: 15px;
         font-weight: bolder;
-        text-align: left;
-        margin-top: 260px;
-        margin-left: 215px;
-        transform: translate(-50%, -50%);
         color: whitesmoke;
     }
     
