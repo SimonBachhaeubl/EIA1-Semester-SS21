@@ -20,26 +20,19 @@ body{
     
     #text{
         display: inline-block;
-        position: absolute;
+        position: absolute; left: 40px; top: 130px;
         font-size: 15px;
         font-weight: normal;
-        text-align: left;
-        margin-top: 430px;
-        margin-left: 135px;
-        transform: translate(-50%, -50%);
         color: whitesmoke;
     }
     
     img[alt=Pinguin]{
             display: inline-block;
-            position: absolute;
-            margin-left: 270px;
-            margin-top: 500px;
+            position: absolute; absolute; right: -30px; bottom: 20px;
+            
     }
     
     img[alt=Muscheln]{
         display: inline-block;
-        position: absolute;
-        margin-left: -240px;
-        margin-top: 560px;
+        position: absolute; absolute; left: -60px; bottom: -20px;
     }
