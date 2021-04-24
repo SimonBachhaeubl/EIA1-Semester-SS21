@@ -12,14 +12,9 @@ body{
     }
     
     .headline{
-        display: inline-block;
-        position: absolute;
-        font-size:30px;
-        font-weight: bolder;
-        text-align: left;
-        margin-top: -50px;
-        margin-left: 0px;
-        transform: translate(-50%, -50%);
+        
+        position: absolute; left: 90px; top: 40px;
+        
         color: whitesmoke;
     }
     
