@@ -66,3 +66,4 @@ console.log("Die Emission von Australien ist : " + aus + "kg C02");
 console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit :  " + ausrel + "%");
 console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um " + ausv3 + "% verändert ");
 console.log("2018 im Vergleich zu 2008 sind das" + ausv2 + "kg C02");
+//# sourceMappingURL=script.js.map
