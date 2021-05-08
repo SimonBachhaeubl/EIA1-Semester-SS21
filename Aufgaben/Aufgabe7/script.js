@@ -6,8 +6,8 @@ sounds.push(new Audio("G.mp3"));
 sounds.push(new Audio("hihat.mp3"));
 sounds.push(new Audio("kick.mp3"));
 sounds.push(new Audio("laugh-1.mp3"));
-sounds.push(new Audio("laugh-2.mp3"));
 sounds.push(new Audio("snare.mp3"));
+sounds.push(new Audio("laugh-2.mp3"));
 function playSample(samplenumber) {
     sounds[samplenumber].play();
 }
@@ -21,13 +21,17 @@ window.addEventListener("load", function () {
     document.querySelector("#b7").addEventListener("click", function () { playSample(6); });
     document.querySelector("#b8").addEventListener("click", function () { playSample(7); });
     document.querySelector("#b9").addEventListener("click", function () { playSample(8); });
+
     function drumpadbeat() {
-        setInterval(function () {
-            playSample(5);
-            playSample(6);
+        setInterval(function () 
+        {
             playSample(7);
+            playSample(5);
+            playSample(4);
+
         }, 500);
     }
     document.querySelector("img").addEventListener('click', drumpadbeat);
 });
+
 //# sourceMappingURL=script.js.map
