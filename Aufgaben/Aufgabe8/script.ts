@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
     document.querySelector("#play").addEventListener("click", playorstop);
     document.querySelector("#trash").addEventListener("click", deletebeat);
     document.querySelector("#record").addEventListener("click", recordBeat);
-    document.querySelector("#Remix").addEventListener("click", remixBeat);
+    document.querySelector("#remix").addEventListener("click", remixBeat);
 
     
     let beatInt = undefined;
@@ -61,7 +61,9 @@ window.addEventListener("load", function () {
     function remixBeat(): void {
 
 
-
+// Leider habe ich mich zeilich bisschen verkalkuliert und habe die Remix Funkion nicht rechtzeitig hinbekommen.
+// Da ich Morgen zu meinen Großeltern fahre und vermutlich keine Zeit mehr habe mich nocheinmal daran zu versuchen, 
+// werde ich die Remix Funktion bis Mittwoch nachreichen. Ich hoffe das passt. Schönen Sonntag - Gruß Simon 
 
     }
     
