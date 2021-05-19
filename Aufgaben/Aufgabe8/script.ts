@@ -1,5 +1,5 @@
 "use strict";
-window.addEventListener("load", function () {
+window.addEventListener("load", function (): void {
     document.querySelector("#b1").addEventListener("click", function (): void { playsample("A.mp3"); });
     document.querySelector("#b2").addEventListener("click", function (): void { playsample("C.mp3"); });
     document.querySelector("#b3").addEventListener("click", function (): void { playsample("F.mp3"); });
@@ -15,10 +15,11 @@ window.addEventListener("load", function () {
     document.querySelector("#remix").addEventListener("click", remixBeat);
 
     
-    let beatInt = undefined;
-    let beats = ["kick.mp3", "snare.mp3", "hihat.mp3"];
-    let recording = false;
-    function recordBeat() {
+    var beats: string[] = ["kick.mp3", "snare.mp3", "hihat.mp3", "laugh-2.mp3", "laugh-1.mp3", "A.mp3", "G.mp3", "C.mp3", "F.mp3"];
+    var beatInt: any = undefined;
+
+    var recording: boolean = false;
+    function recordBeat(): void {
         if (recording) {
             recording = false;
         }
@@ -26,15 +27,15 @@ window.addEventListener("load", function () {
             recording = true;
         }
     }
-    function playsample(audios): void {
+    function playsample(audios: string): void {
         if (recording) {
             beats.push(audios);
         }
-        const sound = new Audio(audios);
+        const sound: HTMLElement = new Audio(audios);
         sound.play();
     }
     function playorstop(): void {
-        let playorstopbtn = document.querySelector("#play");
+        let playorstopbtn: HTMLElement = document.querySelector("#play");
         if (playorstopbtn.className == "fas fa-play") {
             playorstopbtn.className = "fas fa-stop";
             playbeat();
@@ -48,7 +49,7 @@ window.addEventListener("load", function () {
         beats = [];
     }
     function playbeat(): void {
-        var index = 0;
+        var index: number = 0;
         beatInt = setInterval(function () {
             playsample(beats[index]);
             index += 1;
@@ -59,13 +60,14 @@ window.addEventListener("load", function () {
     }
 
     function remixBeat(): void {
-
-
-// Leider habe ich mich zeilich bisschen verkalkuliert und habe die Remix Funkion nicht rechtzeitig hinbekommen.
-// Da ich Morgen zu meinen Großeltern fahre und vermutlich keine Zeit mehr habe mich nocheinmal daran zu versuchen, 
-// werde ich die Remix Funktion bis Mittwoch nachreichen. Ich hoffe das passt. Schönen Sonntag - Gruß Simon 
-
+        for (var i: number = 0; i < 3; i++) {
+            const index: number = Math.floor(Math.random() * 8);
+            console.log(index);
+            playsample (beats [index] ); 
+            console.log("Remix");
+        }
     }
+
     
 });
 

@@ -13,8 +13,8 @@ window.addEventListener("load", function () {
     document.querySelector("#trash").addEventListener("click", deletebeat);
     document.querySelector("#record").addEventListener("click", recordBeat);
     document.querySelector("#remix").addEventListener("click", remixBeat);
+    var beats = ["kick.mp3", "snare.mp3", "hihat.mp3", "laugh-2.mp3", "laugh-1.mp3", "A.mp3", "G.mp3", "C.mp3", "F.mp3"];
     var beatInt = undefined;
-    var beats = ["kick.mp3", "snare.mp3", "hihat.mp3"];
     var recording = false;
     function recordBeat() {
         if (recording) {
@@ -56,9 +56,12 @@ window.addEventListener("load", function () {
         }, 600);
     }
     function remixBeat() {
-        // Leider habe ich mich zeilich bisschen verkalkuliert und habe die Remix Funkion nicht rechtzeitig hinbekommen.
-        // Da ich Morgen zu meinen Großeltern fahre und vermutlich keine Zeit mehr habe mich nocheinmal daran zu versuchen, 
-        // werde ich die Remix Funktion bis Mittwoch nachreichen. Ich hoffe das passt. Schönen Sonntag - Gruß Simon 
+        for (var i = 0; i < 3; i++) {
+            var index = Math.floor(Math.random() * 8);
+            console.log(index);
+            playsample(beats[index]);
+            console.log("Remix");
+        }
     }
 });
 //# sourceMappingURL=script.js.map
