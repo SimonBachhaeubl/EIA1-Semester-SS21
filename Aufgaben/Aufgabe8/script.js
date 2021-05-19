@@ -58,9 +58,7 @@ window.addEventListener("load", function () {
     function remixBeat() {
         for (var i = 0; i < 3; i++) {
             var index = Math.floor(Math.random() * 8);
-            console.log(index);
             playsample(beats[index]);
-            console.log("Remix");
         }
     }
 });

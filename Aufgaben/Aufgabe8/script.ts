@@ -62,9 +62,8 @@ window.addEventListener("load", function (): void {
     function remixBeat(): void {
         for (var i: number = 0; i < 3; i++) {
             const index: number = Math.floor(Math.random() * 8);
-            console.log(index);
             playsample (beats [index] ); 
-            console.log("Remix");
+        
         }
     }
 
