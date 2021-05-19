@@ -50,7 +50,7 @@ window.addEventListener("load", function (): void {
     }
     function playbeat(): void {
         var index: number = 0;
-        beatInt = setInterval(function () {
+        beatInt = setInterval(function (): void {
             playsample(beats[index]);
             index += 1;
             if (index >= beats.length) {
@@ -62,7 +62,7 @@ window.addEventListener("load", function (): void {
     function remixBeat(): void {
         for (var i: number = 0; i < 3; i++) {
             const index: number = Math.floor(Math.random() * 8);
-            playsample (beats [index] ); 
+            playsample (beats [index] );
         
         }
     }
