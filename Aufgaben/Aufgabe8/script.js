@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
     document.querySelector("#trash").addEventListener("click", deletebeat);
     document.querySelector("#record").addEventListener("click", recordBeat);
     document.querySelector("#remix").addEventListener("click", remixBeat);
-    var beats = ["kick.mp3", "snare.mp3", "hihat.mp3", "laugh-2.mp3", "laugh-1.mp3", "A.mp3", "G.mp3", "C.mp3", "F.mp3"];
+    var beats = ["kick.mp3", "snare.mp3", "hihat.mp3", "A.mp3", "G.mp3", "C.mp3", "F.mp3"];
     var beatInt = undefined;
     var recording = false;
     function recordBeat() {
@@ -56,9 +56,19 @@ window.addEventListener("load", function () {
         }, 600);
     }
     function remixBeat() {
-        for (var i = 0; i < 3; i++) {
+        var _loop_1 = function () {
             var index = Math.floor(Math.random() * 8);
             playsample(beats[index]);
+            beatInt = setInterval(function () {
+                playsample(beats[index]);
+                index += 1;
+                if (index >= beats.length) {
+                    index = 0;
+                }
+            }, 600);
+        };
+        for (var i = 0; i < 3; i++) {
+            _loop_1();
         }
     }
 });

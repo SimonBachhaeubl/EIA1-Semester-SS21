@@ -15,7 +15,7 @@ window.addEventListener("load", function (): void {
     document.querySelector("#remix").addEventListener("click", remixBeat);
 
     
-    var beats: string[] = ["kick.mp3", "snare.mp3", "hihat.mp3", "laugh-2.mp3", "laugh-1.mp3", "A.mp3", "G.mp3", "C.mp3", "F.mp3"];
+    var beats: string[] = ["kick.mp3", "snare.mp3", "hihat.mp3", "A.mp3", "G.mp3", "C.mp3", "F.mp3"];
     var beatInt: any = undefined;
 
     var recording: boolean = false;
@@ -60,13 +60,26 @@ window.addEventListener("load", function (): void {
     }
 
     function remixBeat(): void {
+    
         for (var i: number = 0; i < 3; i++) {
             const index: number = Math.floor(Math.random() * 8);
             playsample (beats [index] );
-        
-        }
-    }
 
+
+            beatInt = setInterval(function (): void {
+                playsample(beats[index]);
+                index += 1;
+                if (index >= beats.length) {
+                    index = 0;
+                }
+            }, 600);
+        }
+    } 
+                    
+                    
+            
+        
     
 });
 
+                                     
