@@ -1,3 +1,5 @@
+let tasksNumber: number = 0;
+
 var liste: HTMLCollectionOf<Element> = document.getElementsByTagName("LI");
 var i: any;
 for (i = 0; i < liste.length; i++) {
@@ -9,13 +11,16 @@ for (i = 0; i < liste.length; i++) {
 }
 
 
-var close: HTMLCollectionOf<Element> = document.getElementsByClassName("close");
-var i: any;
+var close = document.getElementsByClassName("close");
+var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function(): void {
-    var div: any = this.parentElement;
-    div.style.display = "none";
+    this.parentElement.remove();
+    tasksNumber--;
+    tasksAnzahl();
+    
   };
+  
 }
 
 
@@ -48,10 +53,17 @@ function newElement(): void {
 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function(): void {
-      var div: any = this.parentElement;
-      div.style.display = "none";
+      this.parentElement.remove();
+      tasksNumber--;
+      tasksAnzahl();
+      
     };
-    var count: Element = document.querySelector("#count");
-    count.innerHTML = liste.length;
+    
+    function tasksAnzahl(): void {
+      document.getElementById("counter").innerText = tasksNumber + "total";
+    }
+    
   }
-}
+  tasksNumber++;
+  tasksAnzahl();
+} 

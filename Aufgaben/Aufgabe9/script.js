@@ -1,3 +1,4 @@
+var tasksNumber = 0;
 var liste = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < liste.length; i++) {
@@ -11,8 +12,9 @@ var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
+        this.parentElement.remove();
+        tasksNumber--;
+        tasksAnzahl();
     };
 }
 var list = document.querySelector("ul");
@@ -40,11 +42,15 @@ function newElement() {
     li.appendChild(span);
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function () {
-            var div = this.parentElement;
-            div.style.display = "none";
+            this.parentElement.remove();
+            tasksNumber--;
+            tasksAnzahl();
         };
-        var count = document.querySelector("#count");
-        count.innerHTML = liste.length;
+        function tasksAnzahl() {
+            document.getElementById("counter").innerText = tasksNumber + "total";
+        }
     }
+    tasksNumber++;
+    tasksAnzahl();
 }
 //# sourceMappingURL=script.js.map
